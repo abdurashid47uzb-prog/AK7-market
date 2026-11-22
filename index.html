@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AK7 Market</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header-inner">
+            <a href="./index.html" class="logo"><span>AK7</span> MARKET</a>
+
+            <form class="search" id="searchForm">
+                <input id="searchInput" type="search" placeholder="Mahsulot qidirish..." autocomplete="off">
+                <button type="submit">Qidirish</button>
+            </form>
+
+            <nav class="header-actions">
+                <a href="./pages/sevimli.html">♡ <span>Sevimli</span><b id="favoriteCount">0</b></a>
+                <button id="cartButton" type="button">🛒 <span>Savat</span><b id="cartCount">0</b></button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero container">
+            <div class="hero-content">
+                <p class="eyebrow">AK7 MARKETGA XUSH KELIBSIZ</p>
+                <h1>Kerakli mahsulotlar — barchasi bir joyda!</h1>
+                <p>Sport kiyimlari, telefonlar, elektronika va kundalik mahsulotlarni tanlang.</p>
+                <a href="#products" class="hero-button">Xarid qilish</a>
+            </div>
+            <div class="hero-circle">
+                <div class="hero-product">AK7</div>
+                <span>MARKET</span>
+            </div>
+        </section>
+
+        <section class="container categories-section">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">TANLANG</p>
+                    <h2>Kategoriyalar</h2>
+                </div>
+            </div>
+            <div class="categories" id="categories">
+                <button class="category active" data-category="Barchasi">Barchasi</button>
+                <button class="category" data-category="Sport">⚽ Sport</button>
+                <button class="category" data-category="Telefonlar">📱 Telefonlar</button>
+                <button class="category" data-category="Elektronika">🎧 Elektronika</button>
+                <button class="category" data-category="Kiyimlar">👕 Kiyimlar</button>
+                <button class="category" data-category="Uy uchun">🏠 Uy uchun</button>
+            </div>
+        </section>
+
+        <section class="container products-section" id="products">
+            <div class="section-heading products-heading">
+                <div>
+                    <p class="eyebrow">SIZ UCHUN</p>
+                    <h2>Ommabop mahsulotlar</h2>
+                </div>
+                <span id="productCount">0 ta mahsulot</span>
+            </div>
+            <div class="products-grid" id="productsGrid"></div>
+            <p class="empty-message" id="emptyMessage" hidden>Mahsulot topilmadi.</p>
+            <button class="load-more" id="loadMore" type="button">Yana mahsulotlar</button>
+        </section>
+
+        <section class="benefits">
+            <div class="container benefits-grid">
+                <div><span>🚚</span><h3>Qulay xarid</h3><p>Mahsulotlarni bir joydan tanlang.</p></div>
+                <div><span>💳</span><h3>Oson buyurtma</h3><p>Savatdan buyurtma rasmiylashtiring.</p></div>
+                <div><span>⭐</span><h3>Sevimlilar</h3><p>Yoqtirgan mahsulotlaringizni saqlang.</p></div>
+            </div>
+        </section>
+    </main>
+
+    <div class="cart-overlay" id="cartOverlay"></div>
+    <aside class="cart-drawer" id="cartDrawer">
+        <div class="cart-header">
+            <h2>Savatingiz</h2>
+            <button id="closeCart" type="button" aria-label="Savatni yopish">✕</button>
+        </div>
+        <div class="cart-items" id="cartItems"></div>
+        <div class="cart-footer">
+            <div class="cart-total"><span>Jami:</span><strong id="cartTotal">0 so‘m</strong></div>
+            <button class="checkout-button" id="checkoutButton" type="button">Buyurtma berish</button>
+        </div>
+    </aside>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <a href="./index.html" class="logo"><span>AK7</span> MARKET</a>
+            <p>AK7 Market — qulay xaridlar maskani.</p>
+            <p>© 2026 AK7 Market</p>
+        </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
